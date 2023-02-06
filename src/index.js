@@ -12,7 +12,13 @@ root.render(
   <React.StrictMode>
     <OurApp />
     <MiddlePage/>
-    <Card/>
+    <Card
+    img="swimmer.png"
+    rating="5.0"
+    reviewCount="6"
+    country="USA"
+    title="Life lessons w swimmer"
+    price="136"/>
   </React.StrictMode>
 );
 
