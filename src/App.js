@@ -4,16 +4,20 @@ import Card from './Card';
 
 
 function App() {
-  console.log(data);
   const cards = data.map(item =>{
     return(
         <Card 
-        img={item.coverImg}
-        rating={item.stats.rating}
-        reviewCount={item.stats.reviewCount}
-        location={item.location}
-        title={item.title}
-        price={item.price}/>
+        key={item.id}
+        //use that with the id ^ ^ ^
+        // img={item.coverImg}
+        // rating={item.stats.rating}
+        // reviewCount={item.stats.reviewCount}
+        // location={item.location}
+        // title={item.title}
+        // price={item.price}
+        // openSpots={item.openSpots}
+        item={item}
+        />
     )}
     
     ) 
